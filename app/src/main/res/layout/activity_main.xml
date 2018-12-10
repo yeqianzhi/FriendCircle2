@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@drawable/bg4">
+
+
+    <TextView
+            android:text="用户登录"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/txtLogin"
+            />
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher_round"
+            android:layout_below="@id/txtLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/imageHead"
+            />
+
+    <EditText
+            android:layout_width="300dp"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageHead"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/editbg"
+            android:hint="用户名/手机号码"
+            android:id="@+id/editUsername"/>
+
+    <EditText
+            android:layout_width="300dp"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:layout_below="@id/editUsername"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/editPsw"
+            android:background="@drawable/editbg"
+            android:hint="密码"
+            android:layout_marginBottom="40dp"/>
+
+    <Button
+            android:text="登录"
+            android:textSize="18dp"
+            android:fadingEdgeLength="30dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editPsw"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnLogin"
+            android:background="@drawable/btnbg"
+            android:layout_marginBottom="50dp"/>
+
+    <Button
+            android:text="忘记密码？"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/btnFpsw"
+            android:background="@null"/>
+
+    <Button
+            android:text="新用户"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/btnReg"
+            android:background="@null"/>
+
+</RelativeLayout>
